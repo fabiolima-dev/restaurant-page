@@ -6,6 +6,12 @@ const body = document.querySelector("body")
 const content = document.querySelector("#content");
 const menu = document.createElement("div")
 menu.setAttribute("class", "menu")
+const mainMenu = document.createElement("div")
+mainMenu.setAttribute("class", "main-menu")
+const leftMenu = document.createElement("div")
+leftMenu.setAttribute("class", "side-menu")
+const rightMenu = document.createElement("div")
+rightMenu.setAttribute("class", "side-menu")
 
 const starters = document.createElement("h2");
 starters.innerHTML = "STARTERS";
@@ -54,7 +60,7 @@ function maker () {
         
         div.append(starter, price)
 
-        menu.append(
+        mainMenu.append(
             hr,
             div,
             starterP
@@ -63,22 +69,25 @@ function maker () {
         menuMaker(depth)
     }
     
-    menu.append(starters)
+    mainMenu.append(starters)
     menuMaker(depth);
 
-    menu.append(mainCourse)
+    mainMenu.append(mainCourse)
     menuMaker(depth);
 
-    menu.append(dessert)
+    mainMenu.append(dessert)
     menuMaker(depth);
 
     menu.append(image1, image2, image3)
+
+    menu.append(leftMenu, mainMenu, rightMenu)
 
     content.append(menu)
 }
 
 function remover () {
     menu.innerHTML = "";
+    mainMenu.innerHTML = "";
 }
 
 export {maker, remover}

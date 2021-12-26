@@ -27,6 +27,7 @@ body {
   background-color: #fdebe4;
   color: #4a553f;
   z-index: -3;
+  height: 100%;
 }
 
 hr {
@@ -35,6 +36,7 @@ hr {
 
 #content {
   z-index: -2;
+  height: 100%;
 }
 
 .nav {
@@ -107,7 +109,8 @@ h2 {
 }
 
 .menu {
-  margin: 0px 600px;
+  display: flex;
+  height: 100%;
 }
 
 h3 {
@@ -126,9 +129,36 @@ h3 {
   align-items: center;
 }
 
+.side-menu {
+  width: 700px;
+  height: 100%;
+  background-color: blue;
+  flex: 1;
+}
+
+.main-menu {
+  width: 700px;
+  margin: 0px 100px;
+}
+
 .menu-image {
-  width: 100px;
-  height: 500px;
+  width: 400px;
+  height: 1000px;
   object-fit: cover;
   position: absolute;
+}
+
+#menu-image1 {
+  left: 0px;
+  top: 400px;
+}
+
+#menu-image2 {
+  right: 0px;
+  top: 1100px;
+}
+
+#menu-image3 {
+  left: 0px;
+  top: 1700px;
 }
