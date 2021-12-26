@@ -132,7 +132,6 @@ h3 {
 .side-menu {
   width: 700px;
   height: 100%;
-  background-color: blue;
   flex: 1;
 }
 
@@ -161,4 +160,66 @@ h3 {
 #menu-image3 {
   left: 0px;
   top: 1700px;
+}
+
+#addres {
+  width: 800px;
+  margin: 100px auto;
+}
+
+.hours-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #4a553f;
+  width: 400px;
+  height: 400px;
+  padding: 50px;
+}
+
+.hours {
+  color: #fdebe4;
+  margin: 0px;
+  text-align: left;
+}
+
+.hours-p {
+  font-size: 25px;
+  color: #fdebe4;
+}
+
+.hours-form-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 300px;
+}
+
+.form-input {
+  background-color: #ffb5b5;
+  border: none;
+  border-bottom: 1px solid#4a553f;
+  font-size: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 600px;
+  height: 400px;
+  margin-left: 60px;
+}
+
+#your-message {
+  height: 150px;
+  text-align: start;
+  resize: none;
+}
+
+button {
+  background-color: #4a553f;
+  color: #fdebe4;
+  font-size: 25px;
+  height: 50px;
+  border: none;
 }

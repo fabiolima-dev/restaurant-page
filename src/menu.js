@@ -1,3 +1,4 @@
+import './style.css';
 import menuimage1 from './menu-image1.jpg'
 import menuimage2 from './menu-image2.jpg'
 import menuimage3 from './menu-image3.jpg'
